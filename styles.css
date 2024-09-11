@@ -152,7 +152,7 @@ footer {
     padding: 2rem;
     background: black; /* Ensure the background color is set here */
     color: var(--main-white); /* Ensure the text color is set here */
-    border-top: 4px solid var(--main-red);
+    border-top: 4px solid var(--main-white);
 }
 
 footer a {
