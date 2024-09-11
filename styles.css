@@ -1,4 +1,4 @@
- :root {
+:root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
@@ -32,8 +32,20 @@ body {
     display: flex;
     margin-right: 2rem;
 }
+.nav-list li:hover{
+    background: black;
+}
 ul {
     list-style: none;
+}
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+a {
+    text-decoration: none;
+    color: var(--main-white);
 }
 .welcome-section {
     display: flex;
@@ -64,10 +76,45 @@ h1, h2 {
     padding: 10rem 2rem;
     background: var(--main-blue);
 }
-.contact-section-header > h2 {
-    font-size: 6rem;
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
 }
-.contact-section-header > p {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+}
+.contact-header > h2 {
+    font-size: 3rem;
+}
+.contact-header > p {
     font-style: italic;
 }
 .contact-links {
@@ -78,13 +125,8 @@ h1, h2 {
     margin-top: 4rem;
     flex-wrap: wrap;
 }
-.btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 2px;
+
 }
-a {
-    text-decoration: none;
     
 }
 footer {
