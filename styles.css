@@ -1,6 +1,7 @@
+    @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
     :root {
         --main-white: #f0f0f0;
-        --main-red: #be3144;
+        --main-lightblue: #00CCDD;
         --main-blue: #45567d;
         --main-gray: #303841;
     }
@@ -26,18 +27,26 @@
         top: 0;
         left: 0;
         width: 100%;
-        background: var(--main-red);
+        background: var(--main-lightblue);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
         z-index: 10;
+        border-bottom: 4px solid var(--main-white);
     }
 
     .nav-list {
         display: flex;
         margin-right: 2rem;
-    }
 
-    .nav-list li:hover {
+    }
+    .hover-1:hover{
         background: black;
+    }
+    .hover-2:hover{
+        background:#4F75FF;
+    }
+    
+    .hover-3:hover{
+        background: #6439FF;
     }
 
     ul {
@@ -46,8 +55,10 @@
 
     .nav-list a {
         display: block;
-        font-size: 2.2rem;
-        padding: 2rem;
+        font-size: 2rem;
+        padding: 1rem;
+        font-family: Teko, sans-serif;
+
     }
 
     a {
@@ -63,7 +74,7 @@
         width: 100%;
         height: 100vh;
         background-color: #000;
-        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        background-image: url(images/blackbg.jpg);
     }
 
     h1 {
@@ -80,18 +91,18 @@
         font-size: 3rem;
         font-weight: 200;
         font-style: italic;
-        color: var(--main-red);
+        color: var(--main-lightblue);
     }
 
     .projects-section {
         text-align: center;
         padding: 10rem 2rem;
-        background: var(--main-blue);
+        background: #4F75FF;
     }
 
-    .projects-section-header {
+    .projects-header {
         max-width: 640px;
-        margin: 0 auto 6rem auto;
+        margin: 0 auto 3rem auto;
         border-bottom: 0.2rem solid var(--main-white);
     }
 
@@ -117,7 +128,7 @@
         transition: background 0.3s ease-out;
     }
     .btn-show-all:hover{
-        background: red;
+        background:var(--main-lightblue);
     }
 
     .btn {
@@ -135,7 +146,7 @@
         width: 100%;
         height: 80vh;
         padding: 0 2rem;
-        background: var(--main-gray);
+        background: #6439FF;
     }
 
     .contact-header > h2 {
@@ -171,7 +182,7 @@
     }
 
     footer a:hover {
-        color: var(--main-red);
+        color: var(--main-lightblue);
     }
 
     /* Adding a media query for smaller screens */
