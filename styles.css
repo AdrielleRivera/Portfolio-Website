@@ -87,3 +87,11 @@ a {
     text-decoration: none;
     
 }
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+}
