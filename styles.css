@@ -8,11 +8,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* You could also use 1rem here */
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
@@ -103,7 +104,8 @@ h1, h2 {
     margin: 0 auto;
     margin-bottom: 6rem;
 }
-.images{
+
+.images {
     margin-top: 20px;
     width: 100%;
     height: auto;
@@ -155,16 +157,26 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    background: black; /* Ensure the background color is set here */
-    color: var(--main-white); /* Ensure the text color is set here */
+    background: black;
+    color: var(--main-white);
     border-top: 4px solid var(--main-white);
 }
 
 footer a {
-    color: var(--main-white); /* Ensure anchor text color matches footer text color */
+    color: var(--main-white);
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: var(--main-red); /* Change color on hover if needed */
+    color: var(--main-red);
+}
+
+/* Adding a media query for smaller screens */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 4rem;
+    }
 }
