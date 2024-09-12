@@ -92,6 +92,7 @@ h1, h2 {
     font-weight: 200;
     font-style: italic;
     color: var(--main-lightblue);
+    margin-top: 1rem;
 }
 
 .projects-section {
